@@ -1,0 +1,15 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Boda Lourdes y Javier//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:boda-lourdes-javier-2026@baeza
+DTSTAMP:20260726T000000Z
+DTSTART:20261219T120000Z
+DTEND:20261219T220000Z
+SUMMARY:Boda Lourdes & Javier
+DESCRIPTION:Ceremonia 13:00 en la Catedral de la Natividad de Nuestra Señora de Baeza. Celebración en el Claustro de Vandelvira.
+LOCATION:Catedral de la Natividad de Nuestra Señora\, Plaza de Santa María\, 23440 Baeza\, Jaén
+END:VEVENT
+END:VCALENDAR

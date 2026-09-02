@@ -22,11 +22,11 @@
    nav a:hover{color:var(--gold)}
 
    /* HERO */
-   .hero{min-height:80vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:5rem 2rem 2rem;background:linear-gradient(180deg,var(--beige) 0%,#fff 50%,var(--beige) 100%)}
-   .hero-names{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:400;letter-spacing:2px}
+   .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-start;align-items:center;text-align:center;padding:8rem 2rem 2rem;background:linear-gradient(180deg,rgba(30,26,20,.55) 0%,rgba(30,26,20,.15) 35%,rgba(30,26,20,.1) 60%,rgba(30,26,20,.55) 100%),url('pareja-lago.jpg') center/cover no-repeat}
+   .hero-names{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:400;letter-spacing:2px;color:#fdfaf5;text-shadow:0 2px 12px rgba(0,0,0,.4)}
    .hero-and{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:2rem;display:block;margin:.3rem 0}
-   .hero-date{font-size:1rem;letter-spacing:4px;text-transform:uppercase;color:var(--negro-light);margin-top:1.5rem}
-   .hero-place{font-size:.9rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-top:.5rem}
+   .hero-date{font-size:1rem;letter-spacing:4px;text-transform:uppercase;color:#fdfaf5;margin-top:1.5rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+   .hero-place{font-size:.9rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-top:.5rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
    .divider{width:60px;height:1px;background:var(--gold);margin:2rem auto}
 
    /* SECTIONS */
@@ -41,6 +41,15 @@
    .lugar p{color:var(--negro-light);font-size:.9rem;line-height:1.6}
    .lugar .map-link{display:inline-block;margin-top:1.2rem;color:#fff;background:var(--negro);font-size:.75rem;letter-spacing:2px;text-transform:uppercase;text-decoration:none;padding:.7rem 1.5rem;border-radius:4px;transition:background .3s}
    .lugar .map-link:hover{background:var(--gold)}
+
+   /* PELUQUERÍAS */
+   .peluquerias-section{background:#fff;padding:5rem 2rem}
+   .peluquerias-cards{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;max-width:800px;margin:0 auto}
+   .peluqueria-card{padding:1.5rem;border:1px solid var(--beige-dark);border-radius:8px;background:var(--beige)}
+   .peluqueria-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:400;margin-bottom:.6rem}
+   .peluqueria-card p{color:var(--negro-light);font-size:.85rem;line-height:1.6}
+   .peluqueria-card a{color:var(--negro-light);text-decoration:none}
+   .peluqueria-card a:hover{color:var(--gold)}
 
    /* MAPA */
    .mapa-section{background:var(--beige);padding:5rem 2rem}
@@ -107,10 +116,10 @@
    @media(max-width:600px){
      nav ul{gap:.8rem;padding:.8rem .5rem}
      nav a{font-size:.65rem;letter-spacing:1px}
-     .hero{min-height:auto;padding:6rem 1.5rem 2rem}
+     .hero{min-height:70vh;padding:6rem 1.5rem 2rem}
      .hero-names{font-size:2.3rem}
      .hero-and{font-size:1.4rem}
-     .lugares,.hoteles-cards,.contacto-cards{grid-template-columns:1fr}
+     .lugares,.hoteles-cards,.contacto-cards,.peluquerias-cards{grid-template-columns:1fr}
      .mapa-leyenda{grid-template-columns:1fr}
      .mapa-pin{width:24px;height:24px;font-size:12px}
      .mapa-pin.pin-hotel,.mapa-pin.pin-parking{font-size:10px}
@@ -131,6 +140,8 @@
    <li><a href="#lugar">Ceremonia</a></li>
    <li><a href="#mapa">Mapa</a></li>
    <li><a href="#alojamiento">Alojamiento</a></li>
+   <li><a href="#peluquerias">Peluquerías</a></li>
+   <li><a href="#rsvp">Confirmación</a></li>
    <li><a href="#regalo">Regalo</a></li>
    <li><a href="#contacto">Contacto</a></li>
  </ul>
@@ -254,13 +265,71 @@
  </div>
 </div>
 
+<!-- SECCIÓN 2.5: PELUQUERÍAS -->
+<div class="peluquerias-section" id="peluquerias">
+ <h2 class="section-title">Peluquerías</h2>
+ <p class="section-subtitle">Si queréis arreglaros para el gran día, aquí tenéis algunas peluquerías de Baeza.</p>
+ <div class="peluquerias-cards">
+   <div class="peluqueria-card">
+     <h3>Magnio Peluqueros</h3>
+     <p>📍 C. San Francisco, 24</p>
+     <p>📞 <a href="tel:+34625268523">625 26 85 23</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>Peluquería Urbana</h3>
+     <p>📍 Pl. José León, 4</p>
+     <p>📞 <a href="tel:+34953742582">953 74 25 82</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>Peluquería Juanmi</h3>
+     <p>📍 C. Azulejos, 24</p>
+     <p>📞 <a href="tel:+34617632759">617 63 27 59</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>Peluquería BAYPE</h3>
+     <p>📍 C. Virgen de la Fervorosa, 21</p>
+     <p>📞 <a href="tel:+34649637632">649 63 76 32</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>CM Peluqueros</h3>
+     <p>📍 C. El Rojo, 48</p>
+     <p>📞 <a href="tel:+34607556417">607 55 64 17</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>Peluquería Peinados</h3>
+     <p>📍 C. San Pablo, 8</p>
+     <p>📞 <a href="tel:+34600052643">600 05 26 43</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>María Ruiz Estilista</h3>
+     <p>📍 C. Alonso Rodríguez, 8</p>
+     <p>📞 <a href="tel:+34627359971">627 35 99 71</a></p>
+   </div>
+   <div class="peluqueria-card">
+     <h3>Mímate Peluquería</h3>
+     <p>📍 C. Julio Burell, 40</p>
+     <p>📞 <a href="tel:+34953744433">953 74 44 33</a></p>
+   </div>
+ </div>
+</div>
+
+<!-- SECCIÓN 3: CONFIRMACIÓN -->
+<div class="form-section" id="rsvp">
+ <h2 class="section-title">Confirmación de asistencia</h2>
+ <p class="section-subtitle">Por favor, rellena el siguiente formulario y confírmanos si podrás acompañarnos en nuestro día.</p>
+ <div style="text-align:center">
+   <a href="https://docs.google.com/forms/d/11SDFveS4_UPQbog39QWFReqaaAHXHPZ1HbskT9vWeCE/viewform" target="_blank" class="submit-btn" style="display:inline-block;text-align:center;text-decoration:none;max-width:400px">Rellenar formulario</a>
+ </div>
+</div>
+
 <!-- SECCIÓN 4: REGALO -->
 <section class="regalo-section" id="regalo">
  <h2 class="section-title">Regalo</h2>
  <div class="divider"></div>
  <br>
- <p>El mejor regalo es poder compartir con vosotros este día. Muy pronto compartiremos aquí los datos para quienes queráis ayudarnos en el inicio de esta nueva etapa.</p>
- <span class="proximamente-clara">Próximamente</span>
+ <p>El mejor regalo es poder compartir con vosotros este día. Si además queréis ayudarnos en el inicio de esta nueva etapa, estaremos muy agradecidos:</p>
+ <button class="iban" id="iban" type="button">📋 ES05 1465 0100 98 2061488702</button>
+ <p class="copy-msg" id="copy-msg">¡Copiado al portapapeles!</p>
 </section>
 
 <!-- SECCIÓN 5: CONTACTO -->
@@ -283,6 +352,17 @@
 <footer>
  <p>19 de diciembre de 2026 · Baeza, Jaén</p>
 </footer>
+
+<script>
+// Copy IBAN
+document.getElementById('iban').addEventListener('click', function() {
+ navigator.clipboard.writeText('ES05 1465 0100 98 2061488702').then(function() {
+   var msg = document.getElementById('copy-msg');
+   msg.style.opacity = '1';
+   setTimeout(function() { msg.style.opacity = '0'; }, 2000);
+ });
+});
+</script>
 
 </body>
 </html>
