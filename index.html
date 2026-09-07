@@ -6,7 +6,8 @@
  <meta name="format-detection" content="telephone=no">
  <meta property="og:title" content="Boda Lourdes & Javier">
  <meta property="og:description" content="19 de diciembre de 2026 · Baeza, Jaén">
- <meta property="og:url" content="https://tuusuario.github.io/lourdesyjavier/">
+ <meta property="og:image" content="https://jtroyano.github.io/WebLourdes-Javier/pareja-lago.jpg">
+ <meta property="og:url" content="https://jtroyano.github.io/WebLourdes-Javier/">
  <meta property="og:type" content="website">
  <title>Lourdes & Javier - 19 Diciembre 2026</title>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
@@ -26,7 +27,10 @@
    .hero-names{font-family:'Playfair Display',serif;font-size:3.5rem;font-weight:400;letter-spacing:2px;color:#fdfaf5;text-shadow:0 2px 12px rgba(0,0,0,.4)}
    .hero-and{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold);font-size:2rem;display:block;margin:.3rem 0}
    .hero-date{font-size:1rem;letter-spacing:4px;text-transform:uppercase;color:#fdfaf5;margin-top:1.5rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
-   .hero-place{font-size:.9rem;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-top:.5rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+   .hero-place{font-size:1.3rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-top:.8rem;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+   .calendario-bar{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;padding:1.5rem 2rem;background:var(--beige)}
+   .calendario-bar a{display:inline-block;padding:.8rem 1.5rem;background:var(--negro);color:#fff;text-decoration:none;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;border-radius:4px;transition:background .3s}
+   .calendario-bar a:hover{background:var(--gold)}
    .divider{width:60px;height:1px;background:var(--gold);margin:2rem auto}
 
    /* SECTIONS */
@@ -50,6 +54,7 @@
    .peluqueria-card p{color:var(--negro-light);font-size:.85rem;line-height:1.6}
    .peluqueria-card a{color:var(--negro-light);text-decoration:none}
    .peluqueria-card a:hover{color:var(--gold)}
+   .peluqueria-card a.maps-link{display:inline-block;margin-top:.4rem;color:var(--negro);font-size:.8rem;font-weight:600}
 
    /* MAPA */
    .mapa-section{background:var(--beige);padding:5rem 2rem}
@@ -59,7 +64,7 @@
    .mapa-pin{position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 1px 3px rgba(0,0,0,.3);border:1.5px solid var(--negro)}
    .mapa-pin.pin-venue{background:var(--gold)}
    .mapa-pin.pin-hotel{background:#a3684a;font-size:13px;color:#fff;font-weight:700;font-family:'Montserrat',sans-serif}
-   .mapa-pin.pin-parking{background:var(--beige-dark);color:var(--negro);font-weight:700;font-size:13px}
+   .mapa-pin.pin-parking{background:#2f6fed;color:#fff;font-weight:700;font-size:13px;border-radius:6px}
    .pin-num{position:absolute;bottom:-6px;right:-6px;background:#fff;color:var(--negro);border:1px solid var(--negro);border-radius:50%;width:16px;height:16px;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif}
    .mapa-leyenda{max-width:700px;margin:2.5rem auto 0;display:grid;grid-template-columns:1fr 1fr;gap:.8rem 2rem}
    .mapa-leyenda-item{font-size:.85rem;color:var(--negro-light);line-height:1.5}
@@ -67,7 +72,7 @@
    .mapa-leyenda .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:.4rem;border:1px solid var(--negro)}
    .mapa-leyenda .dot.pin-venue{background:var(--gold)}
    .mapa-leyenda .dot.pin-hotel{background:#a3684a}
-   .mapa-leyenda .dot.pin-parking{background:var(--beige-dark)}
+   .mapa-leyenda .dot.pin-parking{background:#2f6fed;border-radius:2px}
 
    /* HOTELES */
    .hoteles-section{background:#fff;padding:5rem 2rem}
@@ -80,11 +85,13 @@
    .hotel-card a.web-link{display:inline-block;margin-top:1rem;color:#fff;background:var(--gold);font-size:.75rem;letter-spacing:1px;text-decoration:none;padding:.6rem 1.2rem;border-radius:4px;transition:background .3s}
    .hotel-card a.web-link:hover{background:#b8944f}
    .hoteles-nota{text-align:center;color:var(--negro-light);font-size:.85rem;margin-top:2.5rem;line-height:1.7}
-   .otras-opciones{max-width:600px;margin:2rem auto 0;text-align:center;background:var(--beige);border:1px solid var(--beige-dark);border-radius:8px;padding:1.5rem 2rem}
-   .otras-opciones p{color:var(--negro-light);font-size:.9rem;line-height:1.6;margin-bottom:1rem}
-   .otras-opciones-links{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
-   .otras-opciones-links a{color:var(--negro);background:#fff;border:1px solid var(--beige-dark);text-decoration:none;font-size:.75rem;letter-spacing:1px;text-transform:uppercase;padding:.6rem 1.2rem;border-radius:4px;transition:border-color .3s}
-   .otras-opciones-links a:hover{border-color:var(--gold)}
+   .otras-opciones{max-width:650px;margin:2.5rem auto 0;text-align:center;background:var(--beige);border:1px solid var(--beige-dark);border-radius:10px;padding:2.2rem 2.5rem}
+   .otras-opciones p{color:var(--negro-light);font-size:1.05rem;line-height:1.7;margin-bottom:1.4rem}
+   .otras-opciones-links{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap}
+   .otras-opciones-links a{display:inline-flex;align-items:center;gap:.5rem;text-decoration:none;font-size:1rem;font-weight:700;padding:.9rem 1.8rem;border-radius:6px;transition:opacity .3s;color:#fff}
+   .otras-opciones-links a:hover{opacity:.85}
+   .otras-opciones-links a.booking{background:#003580}
+   .otras-opciones-links a.airbnb{background:#FF5A5F}
 
    /* FORM */
    .form-section{background:var(--negro);padding:5rem 2rem}
@@ -100,6 +107,8 @@
    .iban:hover{border-color:var(--gold)}
    .copy-msg{color:var(--gold);font-size:.8rem;margin-top:.5rem;opacity:0;transition:opacity .3s}
    .proximamente-clara{display:inline-block;color:var(--gold);font-family:'Playfair Display',serif;font-style:italic;font-size:1.1rem;border:1px solid var(--beige-dark);border-radius:8px;padding:1.5rem 2.5rem;background:#fff}
+   .lista-bodas{margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--beige-dark)}
+   .lista-bodas p{margin-bottom:1rem}
 
    /* CONTACTO */
    .contacto-section{background:var(--negro);padding:5rem 2rem;text-align:center}
@@ -116,7 +125,7 @@
    @media(max-width:600px){
      nav ul{gap:.8rem;padding:.8rem .5rem}
      nav a{font-size:.65rem;letter-spacing:1px}
-     .hero{min-height:70vh;padding:6rem 1.5rem 2rem}
+     .hero{min-height:70vh;padding:6rem 1.5rem 2rem;background-position:75% 60%}
      .hero-names{font-size:2.3rem}
      .hero-and{font-size:1.4rem}
      .lugares,.hoteles-cards,.contacto-cards,.peluquerias-cards{grid-template-columns:1fr}
@@ -152,11 +161,13 @@
  <span class="hero-names">Lourdes<span class="hero-and">&</span>Javier</span>
  <p class="hero-date">19 de diciembre de 2026</p>
  <p class="hero-place">Baeza, Jaén</p>
- <div style="margin-top:2.5rem;display:flex;justify-content:center;gap:1rem;flex-wrap:wrap">
-   <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Lourdes+%26+Javier&dates=20261219T120000Z/20261219T220000Z&location=Catedral+de+la+Natividad+de+Nuestra+Se%C3%B1ora%2C+Plaza+de+Santa+Mar%C3%ADa%2C+23440+Baeza%2C+Ja%C3%A9n&details=Ceremonia+13%3A00+en+la+Catedral+de+Baeza.+Celebraci%C3%B3n+en+el+Claustro+de+Vandelvira." target="_blank" style="display:inline-block;padding:.8rem 1.5rem;background:var(--negro);color:#fff;text-decoration:none;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;border-radius:4px;transition:background .3s">📅 Google Calendar</a>
-   <a href="boda.ics" download style="display:inline-block;padding:.8rem 1.5rem;background:var(--negro);color:#fff;text-decoration:none;font-size:.75rem;letter-spacing:2px;text-transform:uppercase;border-radius:4px;transition:background .3s">🍎 Apple Calendar</a>
- </div>
 </section>
+
+<div class="calendario-bar">
+   <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Boda+Lourdes+%26+Javier&dates=20261219T120000Z/20261219T220000Z&location=Catedral+de+la+Natividad+de+Nuestra+Se%C3%B1ora%2C+Plaza+de+Santa+Mar%C3%ADa%2C+23440+Baeza%2C+Ja%C3%A9n&details=Ceremonia+13%3A00+en+la+Catedral+de+Baeza.+Celebraci%C3%B3n+en+el+Claustro+de+Vandelvira." target="_blank">🗓️ Google Calendar</a>
+   <a href="boda.ics" download>📆 Apple Calendar</a>
+</div>
+
 
 <!-- SECCIÓN 1: CEREMONIA Y CELEBRACIÓN -->
 <section id="lugar">
@@ -166,7 +177,7 @@
  <div class="lugares">
    <div class="lugar">
      <h3>Ceremonia</h3>
-     <p>La misa se celebrará en la Catedral de la Natividad de Nuestra Señora a las <strong>13:00</strong></p>
+     <p>La misa se celebrará a las <strong>13:00h</strong> en la Catedral</p>
      <br>
      <p>Catedral de la Natividad de Nuestra Señora<br>Plaza de Santa María<br>23440 Baeza, Jaén</p>
      <a class="map-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd6e8ba2a2cec591:0x13a0bbf7f371efbb?sa=X&ved=1t:8290&ictx=111" target="_blank">📍 Cómo llegar</a>
@@ -214,13 +225,11 @@
 <!-- SECCIÓN 2: ALOJAMIENTO -->
 <div class="hoteles-section" id="alojamiento">
  <h2 class="section-title">Alojamiento</h2>
- <p class="section-subtitle">Os compartimos algunos hoteles disponibles en Baeza para el fin de semana del 19 de diciembre. Nos casaremos en la Catedral y celebraremos la boda en el Claustro de Vandelvira. La Catedral, Vandelvira y los hoteles están a menos de 5 minutos andando entre sí.</p>
+ <p class="section-subtitle">Os compartimos algunos hoteles disponibles en Baeza para el fin de semana del 19 de diciembre.</p>
  <div class="hoteles-cards">
    <div class="hotel-card">
      <h3>🏰 Palacio de los Salcedo</h3>
      <p class="stars">⭐⭐⭐⭐</p>
-     <p>💰 80€/noche hab. doble · 85€/noche hab. doble lux · Sin desayuno</p>
-     <p>🏠 30 habitaciones disponibles</p>
      <p>📞 953 747 200</p>
      <span class="code">Código web: BODALOURDESYJAVIER</span><br>
      <a class="web-link" href="https://www.cetinahotels.com/cetina-palacio-salcedo" target="_blank">Ver hotel</a>
@@ -228,16 +237,12 @@
    <div class="hotel-card">
      <h3>🏠 YIT La Casona del Arco</h3>
      <p class="stars">⭐⭐⭐⭐</p>
-     <p>💰 106€/noche hab. doble · Sin desayuno</p>
-     <p>🏠 9 habitaciones disponibles</p>
      <p>📞 953 747 208</p>
      <a class="web-link" href="https://www.hotellacasonadelarco.com" target="_blank">Ver hotel</a>
    </div>
    <div class="hotel-card">
      <h3>🌙 Hotel Puerta de la Luna</h3>
      <p class="stars">⭐⭐⭐⭐</p>
-     <p>💰 Desde 85€/noche (precio no fijo)</p>
-     <p>🏠 34 habitaciones dobles disponibles</p>
      <p>📞 953 747 019</p>
      <p>🅿️ Parking privado en el hotel (con suplemento)</p>
      <span class="code">Código web: BODALOURDESYJAVIER</span><br>
@@ -246,8 +251,6 @@
    <div class="hotel-card">
      <h3>🏨 Hotel TRH Ciudad de Baeza</h3>
      <p class="stars">⭐⭐⭐⭐</p>
-     <p>💰 60€/noche hab. doble · 50€/noche hab. individual · Sin desayuno</p>
-     <p>🏠 40 habitaciones disponibles</p>
      <p>📞 953 748 130</p>
      <p>✉️ comercial.baeza@trhhoteles.com</p>
      <p>🅿️ Parking privado en el hotel</p>
@@ -259,8 +262,8 @@
  <div class="otras-opciones">
    <p>🏡 Baeza es un pueblo muy turístico, así que si preferís otro tipo de alojamiento también encontraréis muchos apartamentos y casas rurales bien valorados en Booking y Airbnb.</p>
    <div class="otras-opciones-links">
-     <a href="https://www.booking.com/city/es/baeza.es.html" target="_blank">Ver en Booking</a>
-     <a href="https://www.airbnb.es/s/Baeza--Ja%C3%A9n--Espa%C3%B1a/homes" target="_blank">Ver en Airbnb</a>
+     <a class="booking" href="https://www.booking.com/city/es/baeza.es.html" target="_blank">🔷 Booking.com</a>
+     <a class="airbnb" href="https://www.airbnb.es/s/Baeza--Ja%C3%A9n--Espa%C3%B1a/homes" target="_blank">🏠 Airbnb</a>
    </div>
  </div>
 </div>
@@ -268,47 +271,55 @@
 <!-- SECCIÓN 2.5: PELUQUERÍAS -->
 <div class="peluquerias-section" id="peluquerias">
  <h2 class="section-title">Peluquerías</h2>
- <p class="section-subtitle">Si queréis arreglaros para el gran día, aquí tenéis algunas peluquerías de Baeza.</p>
+ <p class="section-subtitle">Chapa y pintura disponible para el gran día, aquí algunos sitios:</p>
  <div class="peluquerias-cards">
    <div class="peluqueria-card">
      <h3>Magnio Peluqueros</h3>
      <p>📍 C. San Francisco, 24</p>
      <p>📞 <a href="tel:+34625268523">625 26 85 23</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Magnio%20Peluqueros%20C.%20San%20Francisco%2C%2024%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>Peluquería Urbana</h3>
      <p>📍 Pl. José León, 4</p>
      <p>📞 <a href="tel:+34953742582">953 74 25 82</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Urbana%20Pl.%20Jos%C3%A9%20Le%C3%B3n%2C%204%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>Peluquería Juanmi</h3>
      <p>📍 C. Azulejos, 24</p>
      <p>📞 <a href="tel:+34617632759">617 63 27 59</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Juanmi%20C.%20Azulejos%2C%2024%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>Peluquería BAYPE</h3>
      <p>📍 C. Virgen de la Fervorosa, 21</p>
      <p>📞 <a href="tel:+34649637632">649 63 76 32</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20BAYPE%20C.%20Virgen%20de%20la%20Fervorosa%2C%2021%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>CM Peluqueros</h3>
      <p>📍 C. El Rojo, 48</p>
      <p>📞 <a href="tel:+34607556417">607 55 64 17</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=CM%20Peluqueros%20C.%20El%20Rojo%2C%2048%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>Peluquería Peinados</h3>
      <p>📍 C. San Pablo, 8</p>
      <p>📞 <a href="tel:+34600052643">600 05 26 43</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Peluquer%C3%ADa%20Peinados%20C.%20San%20Pablo%2C%208%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>María Ruiz Estilista</h3>
      <p>📍 C. Alonso Rodríguez, 8</p>
      <p>📞 <a href="tel:+34627359971">627 35 99 71</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=Mar%C3%ADa%20Ruiz%20Estilista%20C.%20Alonso%20Rodr%C3%ADguez%2C%208%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
    <div class="peluqueria-card">
      <h3>Mímate Peluquería</h3>
      <p>📍 C. Julio Burell, 40</p>
      <p>📞 <a href="tel:+34953744433">953 74 44 33</a></p>
+     <p><a class="maps-link" href="https://www.google.com/maps/search/?api=1&query=M%C3%ADmate%20Peluquer%C3%ADa%20C.%20Julio%20Burell%2C%2040%20Baeza%20Ja%C3%A9n" target="_blank">📍 Cómo llegar</a></p>
    </div>
  </div>
 </div>
@@ -330,6 +341,10 @@
  <p>El mejor regalo es poder compartir con vosotros este día. Si además queréis ayudarnos en el inicio de esta nueva etapa, estaremos muy agradecidos:</p>
  <button class="iban" id="iban" type="button">📋 ES05 1465 0100 98 2061488702</button>
  <p class="copy-msg" id="copy-msg">¡Copiado al portapapeles!</p>
+ <div class="lista-bodas">
+   <p>🎁 También tenéis disponible nuestra lista de bodas</p>
+   <span class="proximamente-clara">Próximamente</span>
+ </div>
 </section>
 
 <!-- SECCIÓN 5: CONTACTO -->
