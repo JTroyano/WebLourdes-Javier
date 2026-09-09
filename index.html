@@ -64,8 +64,8 @@
    .mapa-img-wrap{position:relative;max-width:700px;margin:0 auto;border-radius:8px;overflow:hidden;border:1px solid var(--beige-dark)}
    .mapa-img-wrap img{width:100%;display:block}
    .mapa-brujula{position:absolute;top:10px;right:12px;width:26px;height:26px;border-radius:50%;background:rgba(245,240,235,.9);border:1px solid var(--negro);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:var(--negro);font-family:'Montserrat',sans-serif}
-   .mapa-pin{position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 1px 3px rgba(0,0,0,.3);border:1.5px solid var(--negro)}
-   .mapa-pin.pin-venue{background:var(--gold)}
+   .mapa-pin{position:absolute;transform:translate(-50%,-50%);width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;box-shadow:0 1px 3px rgba(0,0,0,.3);border:1.5px solid var(--negro);z-index:1}
+   .mapa-pin.pin-venue{background:var(--gold);z-index:5}
    .mapa-pin.pin-hotel{background:#a3684a;font-size:13px;color:#fff;font-weight:700;font-family:'Montserrat',sans-serif}
    .mapa-pin.pin-parking{background:#2f6fed;color:#fff;font-weight:700;font-size:13px;border-radius:6px}
    .pin-num{position:absolute;bottom:-6px;right:-6px;background:#fff;color:var(--negro);border:1px solid var(--negro);border-radius:50%;width:16px;height:16px;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',sans-serif}
@@ -182,14 +182,14 @@
  <div class="lugares">
    <div class="lugar">
      <h3>Ceremonia</h3>
-     <p>La misa se celebrará a las <strong>13:00h</strong> en la Catedral</p>
+     <p>La misa se celebrará a las <strong>13:00h</strong> en</p>
      <br>
      <p>Catedral de la Natividad de Nuestra Señora<br>Plaza de Santa María<br>23440 Baeza, Jaén</p>
      <a class="map-link" href="https://www.google.com/maps/place//data=!4m2!3m1!1s0xd6e8ba2a2cec591:0x13a0bbf7f371efbb?sa=X&ved=1t:8290&ictx=111" target="_blank">📍 Cómo llegar</a>
    </div>
    <div class="lugar">
      <h3>Celebración</h3>
-     <p>La celebración tendrá lugar en el Claustro de Vandelvira</p>
+     <p>La celebración tendrá lugar en</p>
      <br>
      <p>Claustro de Vandelvira<br>Pl. San Francisco<br>23440 Baeza, Jaén</p>
      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Claustro+de+Vandelvira+Pl.+San+Francisco+Baeza+Jaén" target="_blank">📍 Cómo llegar</a>
